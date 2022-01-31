@@ -1,0 +1,24 @@
+/* Nesting o anidamiento */
+@import '../base/variables';
+
+header {
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar {
+        padding: 0;
+        
+        .navbar-brand {
+            padding: 0;
+            margin-right: 0;
+
+            .logo {
+                width: 80px;
+                cursor: pointer;
+                margin-right: auto;  
+            }
+        }
+        
+    }
+
+}

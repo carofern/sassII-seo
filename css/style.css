@@ -1,0 +1,27 @@
+/* importados para que se compile */
+/* Nesting o anidamiento */
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .navbar-brand {
+  padding: 0;
+  margin-right: 0;
+}
+header .navbar .navbar-brand .logo {
+  width: 80px;
+  cursor: pointer;
+  margin-right: auto;
+}
+header .navbar .navbar-nav a {
+  text-decoration: none;
+  font-size: 21px;
+  margin: 0 10px;
+}
+
+/* Variables */
+
+/*# sourceMappingURL=style.css.map */
