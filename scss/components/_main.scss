@@ -25,7 +25,10 @@
 
  .container {
      margin-top: 5rem;
-    .col a {
+    .column {
+        padding: 2rem;
+    }
+    .column a {
         text-decoration: none;
     }
     .container-photos { /*Aplique Mixin */
