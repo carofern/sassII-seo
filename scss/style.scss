@@ -1,4 +1,12 @@
 /* importados para que se compile */
 
-@import 'components/header';
-@import 'base/variables'
+@import './components/header';
+@import './components/main';
+@import './components/footer';
+@import './components/store';
+@import './components/blog';
+@import './base/mapas';
+@import './base/variables';
+@import './base/extends';
+@import './base/resets';
+@import './base/mixins'

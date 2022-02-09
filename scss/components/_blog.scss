@@ -1,0 +1,11 @@
+.container-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+.blog-img {
+    width: 25rem;
+}

@@ -1,0 +1,29 @@
+
+/* Store */
+
+.container-store {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3rem;
+    @media only screen and (max-width: 480px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .container-store-coffee {
+        width: 100%;
+        align-items: center;
+    }
+    .container-store-title {
+        text-align: center;
+        
+    }
+    .store-img {
+        width: 200px;
+        height: 200px;  
+    }
+}
+
+
+
+

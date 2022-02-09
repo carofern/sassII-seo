@@ -1,0 +1,27 @@
+/* Footer */
+
+footer {
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 1rem;
+        gap: 2rem;
+        ul {
+            list-style: none;
+        }
+        li {
+            text-align: center;
+            display: inline-flex;
+        }
+        img {
+            width: 20px;
+        }
+    }
+    .footer-cw {
+        margin-left: 1rem; 
+        padding: 0.5rem;
+    }
+}
+

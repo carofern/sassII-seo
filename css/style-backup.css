@@ -25,7 +25,7 @@ header {
     cursor: pointer;
     margin-right: auto;
 }
-.nav-menu {
+/* .nav-menu { ----------A BORRAR - VAN VIEJA
     list-style: none;
 }
 .nav-menu-item {
@@ -38,14 +38,15 @@ header {
     font-size: 21px;
     margin: 0 10px;
     line-height: 80px;
-}
+} */
+
 /* Animacion en Nav */
-.nav-menu-item a {
+/* .nav-menu-item a {
     transition: all 0.3s ease;
 }
 .nav-menu-item a:hover {
     color: #d64127;
-}
+} */
 
 /* BOOTSTRAP EN NAV */
 

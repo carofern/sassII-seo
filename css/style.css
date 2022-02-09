@@ -1,27 +1,187 @@
 /* importados para que se compile */
 /* Nesting o anidamiento */
+/* Variables */
+/* Son listas mas potenciadas, no de un solo estilo o naturaleza sino
+varias-muy parecido a un Objeto en JS */
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
 header {
-  display: flex;
   justify-content: flex-end;
 }
 header .navbar {
   padding: 0;
 }
-header .navbar .navbar-brand {
+header .navbar-brand {
   padding: 0;
   margin-right: 0;
 }
-header .navbar .navbar-brand .logo {
+header .logo {
   width: 80px;
   cursor: pointer;
   margin-right: auto;
 }
-header .navbar .navbar-nav a {
+header .navbar-nav a {
+  /* Se aplico MAPAS */
   text-decoration: none;
   font-size: 21px;
   margin: 0 10px;
 }
+header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
+  color: #d64127;
+}
 
+/* Main */
+/* Extends */
+/* Placeholders % */
+.container .container-info, .carrousel .carrousel-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mixins */
+/*
+@mixin tablets {
+    @media screen and (min-width: $small) and (max-width: $medium) {
+
+    }
+}
+*/
+.carrousel {
+  background-image: url(../src/assets/img/Holiday_Header_1800x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 635px;
+  padding: 20px;
+}
+.carrousel .carrousel-text {
+  /* Se aplico EXTEND */
+  color: white;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.carrousel .carrousel-text h1 {
+  font-size: 7rem;
+  letter-spacing: 4px;
+}
+
+.container {
+  margin-top: 5rem;
+}
+.container .col a {
+  text-decoration: none;
+}
+.container .container-photos {
+  /*Aplique Mixin */
+  width: 356px;
+  height: 260px;
+}
+.container .container-photos:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.container .container-info {
+  /* Aplique EXTEND */
+  color: black;
+  margin-top: 2.5rem;
+  background-color: rgba(214, 212, 212, 0.842);
+  padding: 0.5rem;
+}
+.container .container-nombre {
+  margin: auto;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* Footer */
+footer .nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+footer .nav-footer ul {
+  list-style: none;
+}
+footer .nav-footer li {
+  text-align: center;
+  display: inline-flex;
+}
+footer .nav-footer img {
+  width: 20px;
+}
+footer .footer-cw {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+/* Store */
+.container-store {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem;
+}
+@media only screen and (max-width: 480px) {
+  .container-store {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.container-store .container-store-coffee {
+  width: 100%;
+  align-items: center;
+}
+.container-store .container-store-title {
+  text-align: center;
+}
+.container-store .store-img {
+  width: 200px;
+  height: 200px;
+}
+
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
+  gap: 2rem;
+}
+
+.blog-img {
+  width: 25rem;
+}
+
+/* Son listas mas potenciadas, no de un solo estilo o naturaleza sino
+varias-muy parecido a un Objeto en JS */
 /* Variables */
+/* Extends */
+/* Placeholders % */
+.carrousel .carrousel-text, .container .container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Resets */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* Mixins */
+/*
+@mixin tablets {
+    @media screen and (min-width: $small) and (max-width: $medium) {
+
+    }
+}
+*/
 
 /*# sourceMappingURL=style.css.map */

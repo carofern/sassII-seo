@@ -1,24 +1,33 @@
 /* Nesting o anidamiento */
 @import '../base/variables';
+@import '../base/mapas';
 
+body {
+    font-family: 'Bebas Neue', cursive;
+}
 header {
-    display: flex;
     justify-content: flex-end;
-
     .navbar {
         padding: 0;
-        
-        .navbar-brand {
-            padding: 0;
-            margin-right: 0;
-
-            .logo {
-                width: 80px;
-                cursor: pointer;
-                margin-right: auto;  
-            }
-        }
+    }
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+    }
+    .logo {
+        width: 80px;
+        cursor: pointer;
+        margin-right: auto;
+    }
+    .navbar-nav a { /* Se aplico MAPAS */
+        text-decoration: map-get($boton-nav, text-decoration);
+        font-size: map-get($boton-nav, font-size);
+        margin: map-get($boton-nav, margin);
         
     }
-
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: $color-hover;
+    }
 }
+
+
